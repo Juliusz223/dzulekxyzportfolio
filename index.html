@@ -1,53 +1,58 @@
 <!DOCTYPE html>
 <html lang="pl">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>dzulek</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/5968/5968756.png" type="image/png" />
-</head>
-<body>
-  <header class="fade-in">
-    <div class="logo">(dzulek)</div>
-    <a href="https://discord.com/users/TWOJE_ID" target="_blank" class="discord-icon">
-      <img src="https://cdn-icons-png.flaticon.com/512/2111/2111370.png" alt="Discord" />
-    </a>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>dzulek</title>
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/5968/5968756.png" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gradient-to-b from-[#0f0f0f] to-[#1e1e1e] text-white font-sans">
 
-  <section id="hero" class="fade-in">
-    <h1>Hej, tu dzulek</h1>
-    <p>Tworzę serwery i pluginy Minecraft</p>
-  </section>
+    <!-- Hero -->
+    <section class="h-screen flex flex-col items-center justify-center text-center px-4">
+      <div class="text-5xl font-bold border-4 rounded-full px-8 py-4 mb-6">(dzulek)</div>
+      <p class="text-xl text-gray-400 mb-4">Tworzę serwery i pluginy Minecraft</p>
+      <a href="https://discord.com/users/TWOJE_ID" target="_blank" class="mt-4">
+        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111370.png" alt="Discord" class="w-10 hover:scale-110 transition-transform duration-300" />
+      </a>
+    </section>
 
-  <section id="projekty" class="fade-in">
-    <h2>Projekty</h2>
-    <div class="projekt">
-      <h3>kilofmc.pl</h3>
-      <p>Serwer Minecraft</p>
-    </div>
-    <div class="projekt">
-      <h3>freezecode.pl</h3>
-      <p>Serwer z pluginami i skryptami</p>
-    </div>
-  </section>
+    <!-- Projekty -->
+    <section class="py-20 px-4 max-w-4xl mx-auto">
+      <h2 class="text-3xl font-bold mb-8">Projekty</h2>
+      <div class="space-y-6">
+        <div class="p-6 bg-[#2a2a2a] rounded-xl shadow hover:shadow-lg transition">
+          <h3 class="text-xl font-semibold">kilofmc.pl</h3>
+          <p class="text-gray-400">Serwer Minecraft z unikalnymi trybami i pluginami</p>
+        </div>
+        <div class="p-6 bg-[#2a2a2a] rounded-xl shadow hover:shadow-lg transition">
+          <h3 class="text-xl font-semibold">freezecode.pl</h3>
+          <p class="text-gray-400">Własne pluginy, skrypty i silnik dla serwerów Minecraft</p>
+        </div>
+      </div>
+    </section>
 
-  <section id="doswiadczenie" class="fade-in">
-    <h2>Doświadczenie</h2>
-    <ul>
-      <li>Admin serwerów Minecraft</li>
-      <li>Tworzenie pluginów w Skript i Java</li>
-      <li>Optymalizacja gameplay'u i administracja</li>
-    </ul>
-  </section>
+    <!-- Doświadczenie -->
+    <section class="py-20 px-4 max-w-4xl mx-auto">
+      <h2 class="text-3xl font-bold mb-6">Doświadczenie</h2>
+      <ul class="list-disc list-inside space-y-2 text-gray-300">
+        <li>Administracja serwerami Minecraft od 2020</li>
+        <li>Tworzenie pluginów w Java & Skript</li>
+        <li>Współpraca z zespołami i optymalizacja gameplay'u</li>
+      </ul>
+    </section>
 
-  <section id="kontakt" class="fade-in">
-    <h2>Kontakt</h2>
-    <p>Discord: <strong>@dzulek</strong></p>
-  </section>
+    <!-- Kontakt -->
+    <section class="py-20 px-4 max-w-4xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-4">Kontakt</h2>
+      <p class="text-gray-400">Discord: <strong>@dzulek</strong></p>
+    </section>
 
-  <footer class="fade-in">
-    <p>© 2025 dzulek. Strona hostowana przez GitHub Pages.</p>
-  </footer>
-</body>
+    <!-- Footer -->
+    <footer class="py-6 text-center text-gray-500 text-sm border-t border-gray-800">
+      © 2025 dzulek. Strona hostowana przez GitHub Pages.
+    </footer>
+
+  </body>
 </html>

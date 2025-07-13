@@ -1,8 +1,9 @@
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
-  background: #0f0f0f;
+  background: #111;
   color: white;
+  scroll-behavior: smooth;
 }
 
 header {
@@ -10,6 +11,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 30px;
+  border-bottom: 1px solid #333;
 }
 
 .logo {
@@ -43,8 +45,9 @@ h2 {
   margin-bottom: 20px;
 }
 
-.projekt {
-  margin-bottom: 20px;
+ul {
+  list-style-type: square;
+  padding-left: 20px;
 }
 
 footer {
@@ -52,4 +55,25 @@ footer {
   padding: 20px;
   font-size: 0.9em;
   color: #999;
+  border-top: 1px solid #333;
+}
+
+/* Animacje */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 1s forwards;
+}
+
+.fade-in:nth-child(2) { animation-delay: 0.2s; }
+.fade-in:nth-child(3) { animation-delay: 0.4s; }
+.fade-in:nth-child(4) { animation-delay: 0.6s; }
+.fade-in:nth-child(5) { animation-delay: 0.8s; }
+.fade-in:nth-child(6) { animation-delay: 1s; }
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
